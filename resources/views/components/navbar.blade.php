@@ -20,7 +20,7 @@
                             <a href="/dashboard" class="{{ request()->is('dashboard') ? 'bg-yellow-300 text-white' : 'bg-white text-gray-800 hover:bg-yellow-300 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>                            
                             <a href="/about" class="{{ request()->is('about') ? 'bg-yellow-300 text-white' : 'bg-white text-gray-800 hover:bg-yellow-300 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium hover:bg-yellow-300 hover:text-white">About</a>
                             <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-800 hover:bg-yellow-300 hover:text-white">Contacts</a>
-                            <a href="/recipes" class="{{ request()->is('recipes') ? 'bg-yellow-300 text-white' : 'bg-white text-gray-800 hover:bg-yellow-300 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium hover:bg-yellow-300 hover:text-white">Recipes</a>
+                            <a href="/recipes" class="{{ request()->is('recipes') ? 'bg-yellow-300 text-white' : 'bg-white text-gray-800 hover:bg-yellow-300 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium hover:bg-yellow-300 hover:text-white">My Recipes</a>
                         </div>
                     </div>
                 </div>
