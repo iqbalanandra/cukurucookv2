@@ -15,6 +15,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('description');
+            $table->string('postedBy')->default('admin');
             $table->unsignedInteger('userId');
             $table->foreign('userId')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();

@@ -8,12 +8,20 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 class LoginController extends Controller
+
 {
+    public function __construct()
+    {
+        // Cek jika user sudah login, arahkan ke dashboard
+        $this->middleware('guest')->except('logout');
+    }
+    
     // Menampilkan form login
     public function showLoginForm()
     {
         return view('auth.login');
     }
+
 
     // Proses login
     public function login(Request $request)
