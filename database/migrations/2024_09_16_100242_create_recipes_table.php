@@ -11,10 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Migration for recipes table
         Schema::create('recipes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->text('description');
+            $table->string('photo')->nullable()->default('food.png'); // Add photo column
             $table->unsignedInteger('userId');
             $table->foreign('userId')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
